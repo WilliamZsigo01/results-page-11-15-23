@@ -1,0 +1,118 @@
+<!--     http://127.0.0.1:3000/rp.html?searchID=3671,3672,3673,3674,3675,3676&customerID=1600      -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results</title>
+    <link rel="stylesheet" href="rp.css" />
+  </head>
+  <body id="body">
+    <div id="center-placement">
+      <div id="loading-popup">
+        <div class="loader"></div>
+      </div>
+    </div>
+
+    <div id="main-container">
+      <div id="center">
+        <div id="center-top">
+          <div id="explanation-div">
+            <h3 id="explanation"></h3>
+          </div>
+          <div id="customer-number-div">
+            <h1 id="customer-number" style="color: #61c9de">
+              #<span id="customer-number-value">__</span>
+            </h1>
+          </div>
+          <div id="r-div"><img src="./IMAGES/r.gif" alt="" /></div>
+        </div>
+
+        <div id="card-holder">
+          <div id="card-rank">
+            <img src="./IMAGES/1.svg" alt="" />
+            <img src="./IMAGES/2.svg" alt="" />
+            <img src="./IMAGES/3.svg" alt="" />
+          </div>
+
+          <div id="card-picture-area">
+            <img src="./IMAGES/default.png" alt="Strain Image" />
+          </div>
+          <div id="card-thc-level">
+            <h3 id="dynamic-thc-level"></h3>
+          </div>
+
+          <div id="card-strain-name">
+            <p id="dynamic-strain-name">Dynamic Strain Name</p>
+          </div>
+          <div id="strain-type-text-area">
+            <p id="strain-type-text">Strain Type Text...</p>
+          </div>
+          <div id="card-seeker-score">
+            <p id="dynamic-seeker-score">
+              Seeker Score: <span>loading...</span>
+            </p>
+
+            <div id="card-unit-price">
+                <p id="dynamic-unit-price"></p>
+              </div>
+            <!--display 'seekerscore' text along with score-->
+          </div>
+
+          <div id="card-holder-button-container">
+            <div id="view-details-container">
+              <button id="view-details-button">
+                <span id="view-details-button-span">View Details</span>
+              </button>
+            </div>
+            <div id="buy-now-container">
+              <button id="buy-now-button">
+                <span id="buy-now-button-span">Buy Now</span>
+              </button>
+            </div>
+          </div>
+
+          <div id="arrow-div">
+            <div id="left">
+              <button id="left-arrow">
+                <img src="./IMAGES/arrowiconright.png" alt="Right Arrow Icon" />
+              </button>
+            </div>
+
+            <div id="right">
+              <button id="right-arrow">
+                <img src="./IMAGES/arrowiconleft.png" alt="Left Arrow Icon" />
+              </button>
+            </div>
+          </div>
+
+          <div id="quick-selector">
+            <p>STRAIN QUICK SELECT</p>
+            <div class="strain-quick-select-btn" value="11">
+              <img src="./IMAGES/CBD_icons-12.svg" alt="11" />
+            </div>
+            <div class="strain-quick-select-btn" value="12">
+              <img src="./IMAGES/CBD_3-04.svg" alt="12" />
+            </div>
+            <div class="strain-quick-select-btn" value="2">
+              <img src="./IMAGES/CBD_icons-38.svg" alt="2" />
+            </div>
+            <div class="strain-quick-select-btn" value="7">
+              <img src="/IMAGES/CBD_icons-28.svg" alt="7" />
+            </div>
+            <div class="strain-quick-select-btn" value="8">
+              <img src="./IMAGES/CBD_3-06.svg" alt="8" />
+            </div>
+            <div class="strain-quick-select-btn" value="6">
+              <img src="./IMAGES/CBD_3-02.svg" alt="6" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="rp.js"></script>
+    <script type="module" src="API.js"></script>
+  </body>
+</html>
